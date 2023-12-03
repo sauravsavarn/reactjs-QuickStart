@@ -3,6 +3,7 @@ import './App.css';
 import ExampleFunctionComponent from './components/example-functional-compoonent/ExampleFunctionalComponent';
 import ExampleFunctionalComponentUsingArrowFunction from './components/example-functional-compoonent/ExampleFunctionalComponentUsingArrowFunction';
 import ExampleFunctionalComponentUsingArrowFunctionInSingleLine from './components/example-functional-compoonent/ExampleFunctionalComponentUsingArrowFunctionInSingleLine';
+import ExampleClassComponent from './components/example-class-component/ExampleClassComponent';
 // App component represents the view which when launch can be seen in the browser.
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
 
       {/* declaring a functional component using ES6 Arrow function in a single line when there is a single statement to return */}
       <ExampleFunctionalComponentUsingArrowFunctionInSingleLine />
+
+      {/* declaring basic class component */}
+      <ExampleClassComponent />
     </div>
   );
 }
