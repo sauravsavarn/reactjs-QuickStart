@@ -4,6 +4,7 @@ import ExampleFunctionComponent from './components/example-functional-compoonent
 import ExampleFunctionalComponentUsingArrowFunction from './components/example-functional-compoonent/ExampleFunctionalComponentUsingArrowFunction';
 import ExampleFunctionalComponentUsingArrowFunctionInSingleLine from './components/example-functional-compoonent/ExampleFunctionalComponentUsingArrowFunctionInSingleLine';
 import ExampleClassComponent from './components/example-class-component/ExampleClassComponent';
+import ExampleComponentLifecycle from './components/example-component-lifecycle/ExampleComponentLifecycle';
 // App component represents the view which when launch can be seen in the browser.
 function App() {
   return (
@@ -18,7 +19,12 @@ function App() {
       <ExampleFunctionalComponentUsingArrowFunctionInSingleLine />
 
       {/* declaring basic class component */}
-      <ExampleClassComponent />
+      <ExampleClassComponent /><hr/>
+
+      {/* example to showcase component lifecycle */}
+      <ExampleComponentLifecycle >
+        <h1>Component Lifecycle</h1>
+      </ExampleComponentLifecycle><hr/>
     </div>
   );
 }
