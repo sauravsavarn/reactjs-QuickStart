@@ -5,6 +5,8 @@ import ExampleFunctionalComponentUsingArrowFunction from './components/example-f
 import ExampleFunctionalComponentUsingArrowFunctionInSingleLine from './components/example-functional-compoonent/ExampleFunctionalComponentUsingArrowFunctionInSingleLine';
 import ExampleClassComponent from './components/example-class-component/ExampleClassComponent';
 import ExampleComponentLifecycle from './components/example-component-lifecycle/ExampleComponentLifecycle';
+import ExampleFunctionalComponentDestructuringProps from './components/example-destructuring-props-and-state/ExampleFunctionalComponentDestructuringProps';
+import ExampleClassComponentDestructuringProps from './components/example-destructuring-props-and-state/ExampleClassComponentDestructuringProps';
 // App component represents the view which when launch can be seen in the browser.
 function App() {
   return (
@@ -25,6 +27,16 @@ function App() {
       <ExampleComponentLifecycle >
         <h1>Component Lifecycle</h1>
       </ExampleComponentLifecycle><hr/>
+
+      {/* example to showcase de-structuring props in functional-component */}
+      <ExampleFunctionalComponentDestructuringProps name="Saurav Savarn" placeOfBirth="Patna" dateOfBirth="22-02-1986">
+        <h1>Example of de-structuring props in functional component</h1>  
+      </ExampleFunctionalComponentDestructuringProps><hr/>
+
+      {/* example to showcase de-structuring props in class-component */}
+      <ExampleClassComponentDestructuringProps name="Saurav Savarn" placeOfBirth="Patna" dateOfBirth="22-02-1986">
+        <h1>Example of de-structuring props in class component</h1>  
+      </ExampleClassComponentDestructuringProps><hr/>
     </div>
   );
 }
