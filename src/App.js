@@ -13,6 +13,7 @@ import ExampleEventHandlingBindingClassComponent1 from './components/example-eve
 import ExampleEventHandlingBindingClassComponent2 from './components/example-event-handling-classNfunctional-component/ExampleEventHandlingBindingClassComponent2';
 import ExampleEventHandlingBindingClassComponent3 from './components/example-event-handling-classNfunctional-component/ExampleEventHandlingBindingClassComponent3';
 import ExampleEventHandlingBindingClassComponent4 from './components/example-event-handling-classNfunctional-component/ExampleEventHandlingBindingClassComponent4';
+import ExampleChildToParentComponentCommunicateUsingProps from './components/example-communicate-from-child-to-parent-component/ExampleChildToParentComponentCommunicateUsingProps';
 // App component represents the view which when launch can be seen in the browser.
 function App() {
   return (
@@ -72,7 +73,13 @@ function App() {
       {/* example of event-handle binding as the arrow function as the class property */}
       <ExampleEventHandlingBindingClassComponent4>
         <h1>Example of event-handling binding using the arrow function as the class property</h1>
-      </ExampleEventHandlingBindingClassComponent4>
+      </ExampleEventHandlingBindingClassComponent4> <hr/>
+
+      {/* example of child component communicating with the parent component */}
+      {/* NOTE: method is passed as props */}
+      <ExampleChildToParentComponentCommunicateUsingProps>
+        <h1>Example of communication from child to parent component</h1>
+      </ExampleChildToParentComponentCommunicateUsingProps>
     </div>
   );
 }
