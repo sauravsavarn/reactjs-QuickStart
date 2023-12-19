@@ -16,6 +16,7 @@ import ExampleEventHandlingBindingClassComponent4 from './components/example-eve
 import ExampleChildToParentComponentCommunicateUsingProps from './components/example-communicate-from-child-to-parent-component/ExampleChildToParentComponentCommunicateUsingProps';
 import ExampleListRenderingUsingMap from './components/example-list-rendering-using-map/ExampleListRenderingUsingMap';
 import ExampleListRenderingUsingMapMethod2 from './components/example-list-rendering-using-map/ExampleListRenderingUsingMapMethod2';
+import ExampleListRenderingUsingMapWithKeys from './components/8.example-list-rendering-with-keys/ExampleListRenderingUsingMapWithKeys';
 // App component represents the view which when launch can be seen in the browser.
 function App() {
   return (
@@ -91,7 +92,12 @@ function App() {
       {/* example of list-rendering using map - #method2 */}
       <ExampleListRenderingUsingMapMethod2>
         <h1>Example of list rendering using map - #method2</h1>
-      </ExampleListRenderingUsingMapMethod2>
+      </ExampleListRenderingUsingMapMethod2><hr/>
+
+      {/* example of list-rendering using map and keys */}
+      <ExampleListRenderingUsingMapWithKeys>
+        <h1>Example of list rendering using map and keys</h1>
+      </ExampleListRenderingUsingMapWithKeys>
     </div>
   );
 }
