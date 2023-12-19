@@ -14,6 +14,8 @@ import ExampleEventHandlingBindingClassComponent2 from './components/example-eve
 import ExampleEventHandlingBindingClassComponent3 from './components/example-event-handling-classNfunctional-component/ExampleEventHandlingBindingClassComponent3';
 import ExampleEventHandlingBindingClassComponent4 from './components/example-event-handling-classNfunctional-component/ExampleEventHandlingBindingClassComponent4';
 import ExampleChildToParentComponentCommunicateUsingProps from './components/example-communicate-from-child-to-parent-component/ExampleChildToParentComponentCommunicateUsingProps';
+import ExampleListRenderingUsingMap from './components/example-list-rendering-using-map/ExampleListRenderingUsingMap';
+import ExampleListRenderingUsingMapMethod2 from './components/example-list-rendering-using-map/ExampleListRenderingUsingMapMethod2';
 // App component represents the view which when launch can be seen in the browser.
 function App() {
   return (
@@ -79,7 +81,17 @@ function App() {
       {/* NOTE: method is passed as props */}
       <ExampleChildToParentComponentCommunicateUsingProps>
         <h1>Example of communication from child to parent component</h1>
-      </ExampleChildToParentComponentCommunicateUsingProps>
+      </ExampleChildToParentComponentCommunicateUsingProps><hr/>
+
+      {/* example of list-rendering using map */}
+      <ExampleListRenderingUsingMap>
+        <h1>Example of list rendering using map - #method1</h1>
+      </ExampleListRenderingUsingMap>
+
+      {/* example of list-rendering using map - #method2 */}
+      <ExampleListRenderingUsingMapMethod2>
+        <h1>Example of list rendering using map - #method2</h1>
+      </ExampleListRenderingUsingMapMethod2>
     </div>
   );
 }
